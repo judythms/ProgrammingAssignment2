@@ -3,6 +3,7 @@
 
 ## Write a short comment describing this function
 
+## Fuction to cache the matrix
 makeCacheMatrix <- function(x = matrix()) {
   m<-NULL
   set <- function(y) {
@@ -19,10 +20,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Get inverse of matrix if no cached data found
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+  ## Return a matrix that is the inverse of 'x'
   m <- x$getinv()
   if(!is.null(m)) {
     message("getting cached data")
